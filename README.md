@@ -7,7 +7,7 @@
 - [Tools](#tools)
 - [Data Cleaning and Preparation](#data-cleaning-and-preparation)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Data Analysis](#data-analysis)
+- [Trends and Predictions](#trends-and-predictions)
 - [Results and Findings](#results-and-findings)
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
@@ -64,22 +64,22 @@ I asked and answered the following questions:
 **Which months have the highest and lowest total bills?**
 - December 2023 had the highest bill (one of the outliers, at $105.02). October 2022 had the lowest bill (first full month after move-in).
 - Used `=MIN`, `=MAX`, and `=XLOOKUP` functions
-  
-![SummaryStatistics](https://github.com/user-attachments/assets/eb333343-c7ec-4ac1-b20d-684c4d3cea5f)
+
+![SummaryStatistics](https://github.com/user-attachments/assets/35452abc-61b1-40c1-b876-adfd17e30f98)
 
 **How much does each type of utility contribute to the overall bill? How do they correlate with one another?**
 - Water contributes almost half of the total bill. Sewer and Trash make up the remaining amount, usually equally split.
 - Water and Sewer charges appear highly positively correlated with the total bill, while Trash charges show only a slight positive correlation.
 - Used tables, pie charts, `=SUM` function, and scatter plots
 
-![TotalBreakdown](https://github.com/user-attachments/assets/9390536e-742e-4718-b959-dd8512cfc12b)
-
-![TypeCorrelation](https://github.com/user-attachments/assets/31736284-eac7-4b4f-994a-9477e4ca1e19)
+![TotalBreakdown](https://github.com/user-attachments/assets/1b5b7e81-141d-4626-98f6-6630f15a12f5)
+![TypeCorrelation](https://github.com/user-attachments/assets/c8944306-1f04-44a2-bf95-ac3a6dd15977)
 
 **Which months have the lowest and highest costs per day?**
 - The highest cost per day was December 2023 and the lowest cost per day was October 2022, the same months as the highest/lowest total bills.
 - Used `=MIN` and `=MAX` functions, conditional formatting (color scales)
-<img width="467" alt="RateCPD" src="https://github.com/user-attachments/assets/bc706953-c0a9-4c2e-b444-f53fa99dc7b8">
+
+<img width="467" alt="RateCPD" src="https://github.com/user-attachments/assets/3f8d3d7b-cfb2-4ad2-bb7d-daeaf2fa2c4d">
 
 **Is there a correlation between the rate and the total bill cost? Between the length of the period and the total bill cost?**
 - Visually, the cost per day and total bill trends are similar. This suggests billing days are not a significant predictor of costs.
@@ -87,9 +87,8 @@ I asked and answered the following questions:
 - Rate and bill total have a slightly positive correlation.
 - Used line charts, scatter plots, filters
 
-![DaysCorrelate](https://github.com/user-attachments/assets/8259dbe6-849b-4ec7-a245-3c39b0bfddfd)
-
-![RateCorrelate](https://github.com/user-attachments/assets/8782f85c-5e22-46c6-ba78-2714d9664877)
+![DaysCorrelate](https://github.com/user-attachments/assets/5eed781a-5b43-4028-87fc-f7ee028ebc80)
+![RateCorrelate](https://github.com/user-attachments/assets/a68fb2eb-b9ae-43a2-88e9-cff173eb42c2)
 
 ## Trends and Predictions
 
@@ -101,20 +100,20 @@ I asked the following questions:
 - Total bill costs are **increasing!**
 - Many year-to-year changes were extreme. October - January saw increases greater than 45%.
 - Used line charts, trendlines, conditional formatting (color scales), and percent change calculations (pivot tables)
-<img width="772" alt="Trends" src="https://github.com/user-attachments/assets/909621fa-db5f-4fb9-9288-a8ace31045bc">
+
+<img width="772" alt="Trends" src="https://github.com/user-attachments/assets/c64c9316-a9dd-4518-bd6a-abf5fc0ae5e9">
 
 **Are there seasonal trends in the data?**
 - There appear to be large increases at the start of each season, followed by decreases or little change.
 - No season has consistently higher or lower usage, but there was a steady period of increases from August - December 2023. The highest bills all occurred from November 2023 - March 2024.
 - Used line charts, trendlines, conditional formatting (color scales), and percent change calculations (pivot tables)
-![SeasonalTrends](https://github.com/user-attachments/assets/44492b86-adcc-4226-89dd-6c329fe6ff7e)
 
-![PerChangeChart](https://github.com/user-attachments/assets/34b7e41d-53ca-4e27-9821-d7bdc747090f)
+![SeasonalTrends](https://github.com/user-attachments/assets/fa625d8f-343c-4aae-ac53-48056d79d651)
+![PerChangeChart](https://github.com/user-attachments/assets/9e3fd96e-9015-485f-b284-10659abd6ca9)
 
 **Based on the historical data, what are the forecasted bill totals for the next year?**
 - Overall increased total bill costs despite frequent ups and downs.
 - Used moving averages, forecast trendlines, `=TREND` function
-
 
 ## Results and Findings
 
